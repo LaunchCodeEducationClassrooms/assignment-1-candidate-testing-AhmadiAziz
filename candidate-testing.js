@@ -16,7 +16,7 @@ gradedQuestions = [];
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-let enterCandidateName = input.question("Please enter your name: ");
+enterCandidateName = input.question("Please enter your name: ");
 candidateName.push(enterCandidateName);
 }
 
@@ -39,7 +39,7 @@ console.log("Candidate answer: " + candidateAnswer);
 function gradeQuiz(candidateAnswers) {
 // //   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly
 //  console.log(candidateAnswers);
-  let score = 0;
+   score = 0;
   let j = 0;
     for (let i = 0; i < correctAnswers.length; i++) {
       if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()) {
